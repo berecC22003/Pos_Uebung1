@@ -24,10 +24,10 @@ public class EratosthenesPrimeSieve implements PrimeSteve {
     @Override
     public boolean isPrime(int p) {
         if (p < 0 || p > limit) {
-            throw new Illegalgit statusrgumentException("Number is out of bounds");
+            throw new IllegalArgumentException("Number is out of bounds");
         }
         return sieve[p];
-    }
+    
 
     @Override
     public void printPrimes() {
