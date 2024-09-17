@@ -24,7 +24,7 @@ public class EratosthenesPrimeSieve implements PrimeSteve {
     @Override
     public boolean isPrime(int p) {
         if (p < 0 || p > limit) {
-            throw new IllegalArgumentException("Number is out of bounds");
+            throw new Illegalgit statusrgumentException("Number is out of bounds");
         }
         return sieve[p];
     }
@@ -39,4 +39,5 @@ public class EratosthenesPrimeSieve implements PrimeSteve {
         }
         System.out.println();
     }
+
 }
